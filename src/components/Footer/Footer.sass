@@ -12,20 +12,37 @@
         display: flex
         flex-direction: column
         align-items: center
-        margin-bottom: 50px 
+        @media screen and ( max-width: 1439px )  
+            margin-bottom: 50px
+
+    &__links-container
+        @media screen and ( min-width: 1440px )    
+            display: flex
+            justify-content: center
+            align-items: center
+            border-bottom: 1px solid #FFFFFF
+            border-top: 1px solid #FFFFFF
+            padding-top: 85px
+            padding-bottom: 65px
     
     &__logo
         margin-bottom: 35px
+        @media screen and ( min-width: 1024px) and (max-width: 1439px)
+            width: 400px
+            height: 80px
 
     &__menu
         display: flex
         justify-content: center
         box-sizing: border-box
-        border-bottom: 1px solid #FFFFFF
-        border-top: 1px solid #FFFFFF
-        padding: 40px 20px 0
+            
+        @media screen and ( max-width: 1439px )   
+            padding: 40px 20px 0
+            border-bottom: 1px solid #FFFFFF
+            border-top: 1px solid #FFFFFF
 
 .social
+    flex-grow: 1
     &__caption
         @include font-style-caption
         margin-bottom: 15px
@@ -38,15 +55,28 @@
         margin-right: 0
 
 .menu 
+    flex-grow: 1
     &__container
         display: flex
+        flex: 1 1 25%
         flex-wrap: wrap
-        justify-content: center
 
     &__colum
-        flex-basis: 125px
-        margin-right: 15px
-        margin-bottom: 30px
+        flex-grow: 1
+        @media screen and ( max-width: 1439px )  
+            // margin-right: 15px
+            // flex: 1 1 25%
+            margin-bottom: 30px
+            display: flex
+            flex-direction: column
+            align-items: center
 
     &__colum:last-child
-        margin-right: 0
+        @media screen and ( max-width: 1439px )  
+            margin-right: 0
+    
+    &__social
+        display: flex
+        flex-direction: column
+        width: 190px
+        height: 30px

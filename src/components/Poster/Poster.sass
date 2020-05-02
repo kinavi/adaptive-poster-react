@@ -5,16 +5,6 @@
     @media screen and ( min-width: 720px )
         justify-content: space-between
 
-.poster__img
-    width: 100%
-    height: 100%
-    object-fit: cover
-    top: 0
-    
-    position: absolute
-    background: linear-gradient(180.1deg, rgba(255, 255, 255, 0) 0.07%, rgba(0, 0, 0, 0.138122) 0.08%, rgba(0, 0, 0, 0.75) 99.93%)
-    border-radius: 12px
-
 .poster
     height: 400px
     position: relative
@@ -32,119 +22,130 @@
     @media screen and ( min-width: 1190px )
         flex: 1 1 20%
         margin-right: 2%
-        
 
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        top: 0
+        
+        position: absolute
+        background: linear-gradient(180.1deg, rgba(255, 255, 255, 0) 0.07%, rgba(0, 0, 0, 0.138122) 0.08%, rgba(0, 0, 0, 0.75) 99.93%)
+        border-radius: 12px
+        
+    &__tags-container
+        z-index: 1
+        display: flex
+        margin-bottom: 200px
+
+    &__tag
+        padding: 5px
+        margin-right: 10px
+        border: 1px solid #FFFFFF
+        box-sizing: border-box
+        border-radius: 12px
+
+        font-family: Proxima Nova
+        font-size: 10px
+        line-height: 100%
+
+        text-align: center
+        letter-spacing: 0.05em
+        text-transform: uppercase
+
+        color: #FFFFFF
+
+    &__tag:last-child
+        margin-right: 0
+
+    &__footer
+        z-index: 1
+        display: flex
+        flex-direction: column
+        align-items: center
+
+    &__title
+        display: flex
+        padding-top: 15px
+        font-family: Spectral
+        font-style: normal
+        font-weight: 800
+        font-size: 22px
+        line-height: 110.4%
+        text-align: center
+        color: #FFFFFF
+        border-radius: 12px
+
+    &__carusel
+        display: flex
+        flex-wrap: wrap
 
 @media screen and ( min-width: 720px) and (max-width: 899px )
     .poster:nth-child(2n)
         margin-right: 0
 
-@media screen and ( min-width: 900px ) and ( max-width: 1189px)
+@media screen and ( min-width: 900px ) and ( max-width: 1250px)
     .poster:nth-child(3n)
         margin-right: 0
 
-@media screen and ( min-width: 1190px )
+@media screen and ( min-width: 1251px )
     .poster:nth-child(4n)
         margin-right: 0
 
 
-.poster__tags-container
-    z-index: 1
-    display: flex
-    margin-bottom: 200px
+.carusel
+    margin-top: 50px
 
-.poster__tag
-    padding: 5px
-    margin-right: 10px
-    border: 1px solid #FFFFFF
-    box-sizing: border-box
-    border-radius: 12px
+    &__show-group
+        display: flex
+        flex-direction: column
+        align-items: center
 
-    font-family: Proxima Nova
-    font-size: 10px
-    line-height: 100%
+    &__counter
+        font-family: Proxima Nova
+        font-size: 12px
+        line-height: 15px
 
-    text-align: center
-    letter-spacing: 0.05em
-    text-transform: uppercase
+        display: flex
+        align-items: center
+        text-align: center
+        letter-spacing: 0.05em
+        text-transform: uppercase
 
-    color: #FFFFFF
+        color: #B0B0B0
+        font-weight: bolder
 
-.poster__tag:last-child
-    margin-right: 0
+        margin-bottom: 10px
 
-.poster__footer
-    z-index: 1
-    display: flex
-    flex-direction: column
-    align-items: center
+    &__btn
+        border: 1px solid #FFFFFF
+        box-sizing: border-box
+        border-radius: 52px
+
+        font-family: Proxima Nova
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 19px
+
+        display: flex
+        align-items: center
+        text-align: center
+        letter-spacing: 0.05em
+        text-transform: uppercase
+
+        color: #FFFFFF
+        padding: 15px 25px
+        margin-bottom: 80px
+
+    .poster:last-child
+        margin-bottom: 30px
 
 
-.poster__title
-    display: flex
-    padding-top: 15px
-    font-family: Spectral
-    font-style: normal
-    font-weight: 800
-    font-size: 22px
-    line-height: 110.4%
-    text-align: center
 
-    color: #FFFFFF
-
-    border-radius: 12px
-
-.poster__carusel
-    // margin-bottom: 30px
-    display: flex
-    flex-wrap: wrap
-
-.carusel__show-group
-    display: flex
-    flex-direction: column
-    align-items: center
-
-.carusel__counter
-    font-family: Proxima Nova
-    font-size: 12px
-    line-height: 15px
-
-    display: flex
-    align-items: center
-    text-align: center
-    letter-spacing: 0.05em
-    text-transform: uppercase
-
-    color: #B0B0B0
-    font-weight: bolder
-
-    margin-bottom: 10px
 
 // .poster__carusel:last-child
 //     margin-bottom: 0
 
-.carusel__btn
-    border: 1px solid #FFFFFF
-    box-sizing: border-box
-    border-radius: 52px
 
-    font-family: Proxima Nova
-    font-style: normal
-    font-weight: bold
-    font-size: 16px
-    line-height: 19px
 
-    display: flex
-    align-items: center
-    text-align: center
-    letter-spacing: 0.05em
-    text-transform: uppercase
-
-    color: #FFFFFF
-    padding: 15px 25px
-    margin-bottom: 80px
-
-.carusel
-    margin-top: 50px
-    .poster:last-child
-        margin-bottom: 30px
