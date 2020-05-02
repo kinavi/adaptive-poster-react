@@ -17,4 +17,12 @@
 ![Main](/images/1440_publicity.png)
 ![Main](/images/1440_footer.png)
 
+# Need to do
+The module is currently under development.
+
+- [ ] JS refactoring
+- [ ] CSS refactoring
+- [ ] Fix bugs CSS border
+
+
 
