@@ -1,0 +1,26 @@
+@mixin font-style-callback
+    font-family: Proxima Nova
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 24px
+    text-align: center
+    color: #FFFFFF
+
+.footer
+    
+    &__callback
+        @include font-style-callback
+        
+        border-bottom: 1px solid #EDEDED
+        position: absolute
+        visibility: hidden
+        @media screen and ( min-width: 756px )
+            visibility: visible
+            position: relative
+            padding: 30px 0
+
+.callback
+    &__message
+            
+        

@@ -1,0 +1,255 @@
+.poster__container{
+ 
+
+    display: flex;
+    /* justify-content: space-between; */
+
+    display: flex;
+
+     justify-content: space-between;
+
+     position: relative;
+
+     flex-wrap: wrap;
+     flex-direction: row-reverse;
+ }
+ .my-img{
+    width: 100%;
+
+    height: 100%;
+    
+    top: 0;
+    
+    position: absolute;
+    background: linear-gradient(180.1deg, rgba(255, 255, 255, 0) 0.07%, rgba(0, 0, 0, 0.138122) 0.08%, rgba(0, 0, 0, 0.75) 99.93%);
+    border-radius: 12px;
+}
+.poster {
+    position: relative;
+    /* background: white; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    /* margin-left: 23px; */
+    /* margin-right: 13px; */
+    
+}
+/* .poster:first-child{
+    margin-right: 0;
+} */
+.poster_size-small{
+    min-width: 300px;
+    /* width: 23.55%; */
+    height: 400px;
+}
+
+.poster_size-big{
+    min-width: 620px;
+    /* width: 49.06%; */
+    height: 400px;
+}
+.poster__img-container{
+    position: relative;
+    height: 180px;
+    width: 100%;
+}
+.noradius{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.tag{
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 12px;
+    font-size: 8px;
+
+    font-family: Proxima Nova;      
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 3px 12px;
+    font-weight: bold;
+}
+
+.poster__group-tags{
+    display: flex;
+    padding: 10px 20px;
+    flex-flow: wrap;
+    z-index: 1;
+    align-self: baseline;
+    position: inherit;
+}
+.m-big{
+    margin-bottom: 208px;
+}
+.m-small{
+    margin-bottom: 217px;
+}
+
+.poster__title_big{
+    font-size: 30px;
+    line-height: 37px;
+    margin: 6px 135px;
+}
+.poster__title_small{
+    font-size: 20px;
+    line-height: 22px;
+    margin: 12px 20px;
+}
+
+.poster__title{
+    font-family: Spectral;
+    font-style: normal;
+    font-weight: bold;
+    
+    text-align: center;
+    color: #FFFFFF;
+
+    border-radius: 12px;
+    letter-spacing: 0.5px;        
+}
+
+.poster__detailed-container{
+    padding: 30px 16px;
+    background: white;
+    height: 100%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.poster__footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+.poster__title_detailed{
+    font-family: Spectral;
+
+    font-style: normal;
+    
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 38px;
+    
+    text-align: center;
+    
+    color: #272B2F;
+    
+    margin-bottom: 2px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+}
+.poster__description{
+    font-family: Tinos;
+
+    font-style: normal;
+    
+    font-weight: normal;
+    
+    font-size: 16px;
+    line-height: 20px;
+    
+    text-align: center;
+    
+    color: #272B2F;
+    
+    display: flex;
+}
+
+.poster__carusel{
+    display: flex;
+    /* margin-top: 70px; */
+    justify-content: space-between;
+    /* margin-bottom: 65px; */
+    max-width: 1274px;
+    /* width: 88.61%; */
+    /* width: 1274px; */
+    margin: 0 auto;
+    padding-top: 70px;
+    
+}
+.carusel__show-container{
+    display: flex;
+    flex-direction: column;
+    /* padding: 0 40.35%; */
+    /* margin-bottom: 66px; */
+    /* width: 19%; */
+    margin: 0 auto 86px;
+    width: 246px;
+}
+.carusel__counter{
+    font-family: Proxima Nova;
+    font-size: 12px;
+    line-height: 15px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #B0B0B0;
+
+    margin-bottom: 15px;
+    font-weight: bold;
+    justify-content: center;
+}
+.carusel__btn{
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 52px;
+    background: #272B2F;
+}
+
+.btn__text{
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 15px 15px;
+    justify-content: center;
+}
+.carusel{
+    /* margin-bottom: 40px; */
+}
+.carusel__btn:hover{
+    background: #88703B;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 260px) and (max-width: 1023px) {
+    .poster__container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    .poster__carusel{padding: 70px 35px 0;}
+}
+
+
+@media screen and (min-width: 1441px){
+     
+}
+
+
+

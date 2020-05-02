@@ -1,0 +1,35 @@
+@mixin font-style-menu
+    font-family: Proxima Nova
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 19px
+    text-transform: uppercase
+    
+
+$footer-font-color: #FFFFFF
+
+.menu__links 
+
+.menu__title
+    @include font-style-menu
+    display: flex
+    color: $footer-font-color
+    margin-bottom: 15px
+
+.menu__link
+    display: flex
+    align-items: center
+    margin-bottom: 15px
+
+.link__img
+    margin-right: 10px
+
+.menu__text
+    @include font-style-menu
+    text-transform: none
+    font-weight: normal
+    font-size: 14px
+    line-height: 17px
+    color: $footer-font-color
+    text-decoration: none

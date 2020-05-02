@@ -1,0 +1,21 @@
+@mixin font-style-contact
+    font-family: Proxima Nova
+    font-style: normal
+    font-weight: normal
+    line-height: 17px
+    font-size: 14px
+
+.contacts__link
+    @include font-style-contact
+    color: #766438
+    text-decoration: underline
+
+.contacts__link:hover
+    cursor: pointer
+
+.contacts__caption
+    @include font-style-contact
+    color: #FFFFFF
+
+
+    

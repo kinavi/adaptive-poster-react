@@ -1,0 +1,16 @@
+@mixin font-style-legal
+    font-family: Proxima Nova
+    font-style: normal
+    font-weight: normal
+    font-size: 10px
+    line-height: 12px
+    color: #FFFFFF
+
+.footer__legal-container
+    @include font-style-legal
+    padding: 20px
+    .footer__rank-container
+        display: flex
+        justify-content: space-between
+        align-items: baseline
+

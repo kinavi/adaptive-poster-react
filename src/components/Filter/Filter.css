@@ -1,0 +1,156 @@
+.select:hover{
+    cursor: pointer;
+}
+.sort-select{
+    background: #556274;        
+}
+.filter{
+    margin-top: 50px;
+
+    padding: 16px 32px 16px 32px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.12);
+
+    border-radius: 12px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    
+    justify-content: space-between;
+
+    margin-bottom: 60px;
+}
+.filter__group{
+    display: flex;  
+}
+
+.sort{
+    display: inherit;
+}
+
+.sort__title{
+    font-family: Proxima Nova;
+    font-size: 16px;
+    line-height: 19px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #202326;
+    align-self: center;
+
+    margin-right: 18px;
+    font-weight: bold;
+}
+.select{
+    border: 1px solid #556274;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding: 10px 15px 10px 15px;
+    position: relative;
+}
+.select__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select__title{
+    font-family: Proxima Nova;
+    font-size: 13px;
+    line-height: 16px;
+    
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    
+    color: #556274;
+
+    margin-right: 10px;
+}
+.select__options{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin-top: 12px;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    border: 1px solid #556274;
+}
+.option{
+    margin-bottom: 5px;
+    font-family: Proxima Nova;
+    font-size: 13px;
+    line-height: 16px;
+    align-items: center;
+    color: #556274;
+
+}
+.option:hover{
+    cursor: pointer;
+    outline: 1px solid #556274;
+}
+.sort-select{
+    background: #556274;        
+}
+
+.sort-title{
+    color: #FFFFFF;
+}    
+
+.select{
+    margin-right: 10px;
+
+}
+.select:last-child{
+    margin-right: 0;
+}
+.filter__icon{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 260px) and (max-width: 1024px) {
+    .filter{
+        border-radius: 0;
+        padding: 10px 20px 10px 20px;
+    }
+    .sort{
+        /* visibility: hidden; */
+    }
+    .sort__title{
+        visibility: hidden;
+        position: absolute;
+    }
+    .filter__group{
+        visibility: hidden;
+        position: absolute;
+    }
+    .select{
+        padding: 6px 15px 6px 15px;
+    }
+    .select__title{
+        font-size: 16px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+}
+
+@media screen and (min-width: 1441px){
+
+}
+
+
